@@ -1,0 +1,234 @@
+<!---Start stating document type and language-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Link to bootstrap and css file to change formatting-->
+<link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+<link rel="stylesheet" href="static/glider.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<!---Create a header that has to do with the theme of the homework/webpage-->
+<head>
+  <meta charset="UTF-8">
+  <title>World Suicide Analytics</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-">
+  <div class="container-fluid">
+      <!---Main navbar look for icon and also see if it can be done vertically-->
+      <!---See how title looks -->
+    <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-brightness-alt-low-fill" viewBox="0 0 16 16">
+            <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5 6a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zM2 11a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm10.243-3.536a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-8.486-.707a.5.5 0 1 0 .707.707.5.5 0 0 0-.707-.707zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+          </svg>Understanding world suicide patterns <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+            <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+          </svg></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="tableau.html">Data Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="model.html">Machine Learning</a>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="help.html">Help</a></li>
+              <li><a class="dropdown-item" href="data.html">Data/References</a></li>
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+      </ul>
+  
+    </div>
+  </div>
+  </nav>
+  
+  <!---Put project title in -->
+  <br>
+ <h1>Data Resources</h1>
+ <br>
+ <!---First container-->
+ <div class="container">
+  <!--Create 1st row -->
+    <div class="row gx-5">
+    <!--Create our columns inside our rows-->
+      <div class="col-sm-12 col-xs-12">
+        <p> Different variables from different data sources were researched to see the relationship between suicide and various protective and risk factors. The data used in this project and sources (with links to the datasets) are listed below. </p>
+<!--Close column-->
+      </div>
+<!--Close row-->
+    </div>
+<!--Create 2nd row for data-->
+    <div class="row gx-5">
+  <!--Create our columns inside our rows-->
+  <div class="accordion " id="accordionExample">
+    <div class="accordion-item"> 
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <strong> Suicide rate data </strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+        <div class="accordion-body">
+
+          <ul>
+            <li> WHO - Suicide mortality rate (per 100 000 population) (<a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/suicide-mortality-rate-(per-100-000-population)">link</a>)</li>
+            <li> Our World in Data - Suicide rate by country(<a href="https://ourworldindata.org/suicide ">link</a>)</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <strong> Mental health Parameters</strong>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+        <div class="accordion-body">
+          <ul> 
+            <li>Our World in Data- Share of population with mental health and substance Understanding disorders (relative numbers)(<a href="https://ourworldindata.org/mental-health ">link</a>)</li>
+            <li>WHO - Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (<a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/total-(recorded-unrecorded)-alcohol-per-capita-(15-)-consumption ">link</a>)</li>
+            <li> World Bank - Current health expenditure per capita (current US$) (<a href="https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD">link</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Sociodemographic variables for each country</strong>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+        <div class="accordion-body">
+          <ul>
+            <li>World Bank - Population (Total) (<a href="https://data.worldbank.org/indicator/SP.POP.TOTL">link</a>)</li>
+            <li>Our World in Data - Life expectancy at birth, total(years) (<a href="https://ourworldindata.org/grapher/life-expectancy-at-birth-total-years ">link</a>)</li>
+            <li>World Bank - Birth rate, crude (per 1,000) (<a href="https://data.worldbank.org/indicator/SP.DYN.CBRT.IN ">link</a>)</li>
+            <li>World Bank - Death rate, crude (per 1,000) (<a href="https://data.worldbank.org/indicator/SP.DYN.CDRT.IN ">link</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <strong>Economic variables per country</strong>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
+        <div class="accordion-body">
+          <ul>
+            <li>World Bank - Total Unemployment (percentage of total labor force) (<a href="https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS ">link</a>)</li>
+            <li>World Bank - GDP per capita (Current US$) (<a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD ">link</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button bg-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+         <strong>Country coordinates</strong> 
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample" style="">
+        <div class="accordion-body">
+          <ul>
+            <li> Google for developers (<a href= "https://developers.google.com/public-data/docs/canonical/countries_csv">link</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Close row-->
+    </div>
+<!--Close container-->
+</div>
+<br>
+<hr>
+
+<h1>Data Processing</h1>
+ <!---First container-->
+ <div class="container">
+  <!--Create 1st row -->
+    <div class="row gx-5">
+    <!--Create our columns inside our rows-->
+      <div class="col-sm-12 col-xs-12">
+        <h4>We followed a process with our data, which is described below:</h4>
+        <p>It is important to mention that the data used in this project contains the period within the years 2000 to 2017.
+          <br>We decided to analyze suicide rate through a series of demographic, economical, geographical, and social factors. <br>
+          Our intention is to be able to predict if a person is more likely to die from suicide if they have certain factors in their life. We used data from various resources such as world bank, our world in data, kaggle, and WHO. The data was downloaded from the sources mentioned above and then cleaned using python and pandas. Afterward, all the databases were merged together and became uniform. Data was also normalized between all variables. 
+          <br> We then processed the data through machine learning using models such as : linear regression, logistic regression, random forest, and support vector machine. Of course, there were differences in accuracy because not all models are fit for this kind of purpose: prediction. Some are general models to note relationship between data and other factors. If data is unfit for the type of model it causes faults in accuracy.
+          <br>
+          Beyond logical reasoning, we also found research that sustaining economical factors such as unemployment, had a strong influence on the suicide mortality rate. Other factors we noticed with a strong relationship were mental health and substance abuse and of course death rate. 
+          <br> We hope that with this research, awareness can be raised so additional funding is done in welfare-state policies that may reduce the suicide rate mortality.
+        </p>
+<!--Close column-->
+      </div>
+<!--Close row-->
+    </div>
+<!--Close container-->
+  </div>
+<br>
+<hr>
+
+ <h1>References</h1>
+ <!---First container-->
+ <div class="container">
+  <!--Create 1st row -->
+    <div class="row gx-5">
+    <!--Create our columns inside our rows-->
+      <div class="col-sm-12 col-xs-12">
+ <h4>Data resources used where the following:</h4>
+ <ol>
+<li>World Health Organization. (2014). Preventing suicide: A global imperative. World Health Organization.</li>
+<li>Hannah Ritchie, Max Roser and Esteban Ortiz-Ospina (2015) - "Suicide". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/suicide' [Online Resource: Visited on August 2021]</li>
+<li>Hannah Ritchie and Max Roser (2018) - "Mental Health". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/mental-health' [Online Resource: Visited on August 2021]</li>
+<li>World Health Organization. (2021). Suicide worldwide in 2019: global health estimates.</li>
+<li>Suicide and Suicidal thoughts. Mayo Clinic. Retrieved from: 'https://www.mayoclinic.org/diseases-conditions/suicide/symptoms-causes/syc-20378048'[Online resource: Visited on August 2021]</li>
+
+ </ol>
+
+ <h5>Images are from:</h5>
+ <p> People vector created by stories <a href='https://www.freepik.com/vectors/people'> www.freepik.com</a> </p>
+<ol>
+    
+</ol>
+<!--Close column-->
+</div>
+<!--Close row-->
+    </div>
+<!--Close container-->
+  </div>
+
+
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+          
+    <!-- Copyright sort of? -->
+    <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05);">
+      © Created for the Data Analytics Bootcamp of Tecnológio de Monterrey
+   
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+  </body>
+  </html>

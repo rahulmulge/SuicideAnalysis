@@ -1,0 +1,76 @@
+
+
+/*Normal headers for sections*/
+h1 {
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+     
+h2 {
+    text-align: center;
+    margin: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin-left: 10px;
+    padding: 10px;
+    font-style: oblique;
+}
+
+}
+
+p {
+    margin: 15px;
+    text-align: justify
+
+}
+
+dt { 
+    font-size: 14pt;
+}
+
+#depressedppl {
+    border-radius: 30%;
+}
+
+#moredepressedppl {
+    border-radius: 35%;
+}
+
+.img-thumbnail {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  .img-thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .left {
+    float: left;
+    margin-left: 100px;
+  }
+  
+  .right {
+    float: right;
+    margin-right: 100px;
+  }
+
+  #prev {
+      size: 300px;
+  }
+

@@ -1,0 +1,295 @@
+<!---Start stating document type and language-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Link to bootstrap and css file to change formatting-->
+<link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+<link rel="stylesheet" href="static/glider.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<!---Create a header that has to do with the theme of the homework/webpage-->
+<head>
+  <meta charset="UTF-8">
+  <title>World Suicide Analytics</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary nav-">
+  <div class="container-fluid">
+      <!---Main navbar look for icon and also see if it can be done vertically-->
+      <!---See how title looks -->
+    <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-brightness-alt-low-fill" viewBox="0 0 16 16">
+            <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5 6a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zM2 11a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm10.243-3.536a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-8.486-.707a.5.5 0 1 0 .707.707.5.5 0 0 0-.707-.707zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+          </svg>Understanding world suicide patterns <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+            <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+          </svg></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="tableau.html">Data Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="model.html">Machine Learning</a>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="help.html">Help</a></li>
+              <li><a class="dropdown-item" href="data.html">Data/References</a></li>
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+      </ul>
+  
+    </div>
+  </div>
+  </nav>
+  
+  <!---Put project title in -->
+  <br>
+ <h1>Machine Learning</h1>
+ <br>
+ <!--First container-->
+<div class="container">
+ 
+  <div class="row gx-5">
+    <!--Create our columns inside our rows-->
+      <div class="col-sm-12 col-xs-12">
+        <div class="card border-primary mb-3">
+          <h2 class="card-header">Correlation</h2>
+            <div class="card-body">
+              <p class="card-text"> An initial correlation was made in which we discovered the following correlations:
+                <dl>
+                  <dt>Positive Correlation</dt>
+                  <dd>Suicide rate: 1.000000</dd>
+                  <dd>Mental and substance disorders: 0.146587</dd>  
+                  <dd>Death rate: 0.187283</dd>
+                  <dt>Negative Correlation</dt>
+                  <dd>Life expectancy: -0.188927</dd>
+             </dl>
+             Of course, these correlations were to be expected, nevertheless they are lower than 0.4, meaning they are not high enough to prove a strong relationship.
+           </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--Create second row--->
+    <div class = "row gx-5">
+      <div class = "col-sm-6 col-xs-6">
+        <img src="Images/model/scatterplot_correlation.png" class="img-fluid" alt="scatter correlation">
+      </div>
+      <div class = "col-sm-6 col-xs-6">
+        <br><br>
+        <img src="Images/model/initial_correlation.png" class="img-fluid" alt="initial_correlation">
+      </div>
+     </div>
+  <br><br>
+     <!--Create new row-->
+     <div class="row gx-5">
+      <div class="col-sm-12 col-xs-12">
+        <div class="card border-primary mb-3">
+          <h2 class="card-header">Linear Model</h2>
+            <div class="card-body">
+              <p class="card-text"> We found low testing and training scores, as well as accuracy. This is because linear regressions are used for predictions (of two variables but not categorical variables), in which a logistical regression has a better fit.
+                <dl>
+                  <dt>Results</dt>
+                  <dd>Training Score: 0.06487984027546811 </dd>
+                  <dd>Testing Score: 0.04915427513155979 </dd> 
+                  <dd> Accuracy: 0.049</dd>    
+             </dl>
+           </p>
+          </div>
+        </div>
+      </div>
+    <!--Close row-->
+  </div>
+
+        <!--Create second row--->
+        <div class = "row gx-5">
+          <div class = "col-sm-6 col-xs-6">
+            <br>
+            <img src="Images/model/linearreg_residualplot.png" class="img-fluid" alt="lineal regresion res plot">
+          </div>
+          <div class = "col-sm-6 col-xs-6">
+            <br>
+            <img src="Images/model/linealreg_featureimp.png" class="img-fluid" alt="lineal reg feature">
+          </div>
+          <!--Close row-->
+         </div>
+
+         <!--Create new row for logistical regression-->
+         <div class="row gx-5">
+          <div class="col-sm-12 col-xs-12">
+            <div class="card border-primary mb-3">
+              <h2 class="card-header">Logistical Regression</h2>
+                <div class="card-body">
+                  <p class="card-text"> A logistical regression was made that gave us an accuracy for the model of 70%.<br> Plots were created showing the relationship of unemployment vs suicide rate, and mental disorders and substance abuse vs suicide rate.  
+                    <dl>
+                   <dt>Results</dt> 
+                   <dd>Accuracy：70.43%</dd> 
+                   <dd>Recall：0.00%</dd>
+                   <dd>Precision：0.00% </dd> 
+                   <dd> F1：0.00%</dd> 
+                </dl>
+                 </p>
+              </div>
+            </div>
+          </div>
+        <!--Close row-->
+      </div>
+    
+            <!--Create second row with scatterplots--->
+            <div class = "row gx-5">
+              <div class = "col-sm-6 col-xs-6">
+                <br>
+                <img src="Images/model/log_unempoymentvssuicide.png" class="img-fluid" alt="unemployment suicide">
+              </div>
+              <div class = "col-sm-6 col-xs-6">
+                <br>
+                <img src="Images/model/log_mentalsubvssuicide.png" class="img-fluid" alt="mental suicide">
+              </div>
+              <!--Close row-->
+             </div>
+           <!--Create another row with classification and feature importance--->
+            <div class = "row gx-5">
+              <div class = "col-sm-6 col-xs-6">
+                <br>
+                <img src="Images/model/log_classificationreport.png" class="img-fluid" alt="log classification">
+              </div>
+              <div class = "col-sm-6 col-xs-6">
+                <br>
+                <img src="Images/model/log_featureimportance.png" class="img-fluid" alt="log feature">
+              </div>
+              <!--Close row-->
+             </div>
+             <!--Create new row for Random forest-->
+     <div class="row gx-5">
+      <div class="col-sm-12 col-xs-12">
+        <div class="card border-primary mb-3">
+          <h2 class="card-header">Random forest</h2>
+            <div class="card-body">
+              <p class="card-text"> The model also got an accuracy of 73% but with higher precision and recall than the logistical model.
+                <dl>
+                  <dt>Results</dt>
+                  <dd>Training Data Score: 1.0 </dd>
+                  <dd>Testing Data Score: 0.7364787111622555 </dd> 
+                   
+             </dl>
+           </p>
+          </div>
+        </div>
+      </div>
+    <!--Close row-->
+  </div>
+
+        <!--Create second row--->
+        <div class = "row gx-5">
+          <div class = "col-sm-6 col-xs-6">
+            <br>
+            <img src="Images/model/randomforest_classificationreport.png" class="img-fluid" alt="random forest classification">
+          </div>
+          <div class = "col-sm-6 col-xs-6">
+            <br>
+            <img src="Images/model/randomforest_featureimp.png" class="img-fluid" alt="random forest feature">
+          </div>
+          <!--Close row-->
+         </div>
+       
+          <!--Create new row for SVR and SVM-->
+          <div class="row gx-5">
+            <div class="col-sm-12 col-xs-12">
+              <div class="card border-primary mb-3">
+                <h2 class="card-header">SVR and SVM</h2>
+                  <div class="card-body">
+                    <p class="card-text"> Other models tested were SVR and SVM. SVR threw negative test scores meaning the prediction is not feasible and the parameters were unfit for the data. Mainly this is explained, because it focuses on continous values to know how tolerant we are of errors, while SVM is focused on classification values (like the ones used).
+                      <dl>
+                        <dt>Results</dt>
+                        <dd>Training Score: -0.3901860777815773</dd>
+                        <dd>Testing Score: -0.6574555206324033</dd> 
+                        </dl>
+                        <br>
+                        In the SVM good testing and training scores were obtained as well as an accuracy of 70.0%.
+                        <br> <br>
+                        <dl>
+                          <dt>Results</dt>
+                          <dd>Recall：0.00%</dd>
+                          <dd>Precision：0.00%</dd>
+                          <dd>F1：0.00%</dd>     
+                      </dl>
+                 </p>
+                </div>
+              </div>
+            </div>
+          <!--Close row-->
+        </div>
+      
+              <!--Create second row--->
+              <div class = "row gx-5">
+                <div class = "col-sm-6 col-xs-6">
+                
+                  <img src="Images/model/svm_classificationreport.png" class="img-fluid" alt="svm classification">
+                </div>
+                <div class = "col-sm-6 col-xs-6">
+                  <br>
+                  <img src="Images/model/svm_featureimportance.png" class="img-fluid" alt="svm feature">
+                </div>
+                <!--Close row-->
+               </div>
+                    <br>
+                    <hr>
+                    <br>
+          <!--Conclusion row-->
+          <div class="row gx-5">
+            
+            <div class="col-sm-6 col-xs-6">
+              <br>
+              <br>
+              <div class="card border-primary mb-3">
+                <h2 class="card-header">Conclusions</h2>
+                  <div class="card-body">
+                    <p class="card-text"> In conclusion, SVM, Random Forest, and the Logistical Regression were the best methods for our 
+                      data and our predictions. We believe that this is an important cause that has 
+                      increased during externalities such as the pandemic we are currently going through. Even 
+                      though this is a difficult subject to bring forward (even when it comes to public policy), it is in
+                      our best interest that the awareness raised allows those found in this situation(and with the 
+                      factors analyzed) to receive help.
+                 </p>
+                </div>
+              </div>
+            </div>
+            <div class ="col-sm-6 col-xs-6">
+              <img src="Images/model/model_comparison.png" class="img-fluid" alt="model comparison">
+
+            </div>
+          <!--Close row-->
+        </div>
+      
+
+  <!--Close container-->
+</div>
+
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+          
+    <!-- Copyright sort of? -->
+    <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05);">
+      © Created for the Data Analytics Bootcamp of Tecnológio de Monterrey
+   
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+  </body>
+  </html>
